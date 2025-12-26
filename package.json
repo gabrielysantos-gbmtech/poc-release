@@ -1,0 +1,22 @@
+{
+  "name": "poc-release",
+  "version": "0.1.0",
+  "description": "semantic release for repos POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielysantos-gbmtech/poc-release.git"
+  },
+  "author": "Gabriely Cristovão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielysantos-gbmtech/poc-release/issues"
+  },
+  "homepage": "https://github.com/gabrielysantos-gbmtech/poc-release#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
