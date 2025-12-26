@@ -1,0 +1,62 @@
+{
+  "name": "poc-release",
+  "version": "0.1.0",
+  "description": "semantic release for repos POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielysantos-gbmtech/poc-release.git"
+  },
+  "author": "Gabriely Cristovão",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielysantos-gbmtech/poc-release/issues"
+  },
+  "homepage": "https://github.com/gabrielysantos-gbmtech/poc-release#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^10.0.4",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.1",
+    "@semantic-release/release-notes-generator": "^11.0.7",
+    "semantic-release": "^24.2.0"
+  },
+  "release": {
+    "branches": [
+      "main",
+      "dev"
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      [
+        "@semantic-release/github",
+        {
+          "assets": [
+            {
+              "path": "dist.zip",
+              "label": "Distribution"
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "package.json",
+            "CHANGELOG.md"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+        }
+      ]
+    ]
+  }
+}
