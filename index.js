@@ -19,6 +19,10 @@ app.get('/api/enterprise', (req, res) => {
   res.status(200).json({ response: "GBM by NSTECH" });
 });
 
+app.get('/api/team', (req, res) => {
+  res.status(200).json({ response: "DevOps 😎" });
+});
+
 // Define a POST route (example of handling input)
 app.post('/api/data', (req, res) => {
   const receivedData = req.body;
