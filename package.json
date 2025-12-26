@@ -30,12 +30,10 @@
   "release": {
     "branches": [
       "main",
-      "develop",
       {
         "name": "develop",
         "prerelease": true
       },
-      "homolog",
       {
         "name": "homolog",
         "prerelease": true
