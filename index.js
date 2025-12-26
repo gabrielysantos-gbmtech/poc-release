@@ -15,7 +15,12 @@ app.get('/api/status', (req, res) => {
   res.status(200).json({ status: "Running", service: 'Single File API' });
 });
 
-
+// Define a POST route (example of handling input)
+app.post('/api/data', (req, res) => {
+  const receivedData = req.body;
+  console.log('Received data:', receivedData);
+  res.status(201).json({ message: 'Data received successfully', data: receivedData });
+});
 
 // Start the server
 app.listen(port, () => {
