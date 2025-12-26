@@ -23,6 +23,10 @@ app.get('/api/team', (req, res) => {
   res.status(200).json({ response: "DevOps 😎" });
 });
 
+app.get('/api/country', (req, res) => {
+  res.status(200).json({ response: "Brasil ✅" });
+});
+
 // Define a POST route (example of handling input)
 app.post('/api/data', (req, res) => {
   const receivedData = req.body;
