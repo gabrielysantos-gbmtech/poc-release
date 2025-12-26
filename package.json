@@ -30,7 +30,7 @@
   "release": {
     "branches": [
       "main",
-      "dev"
+      "develop"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
