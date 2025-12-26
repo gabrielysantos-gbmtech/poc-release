@@ -1,3 +1,10 @@
+# [0.5.0-develop.1](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.4.0...v0.5.0-develop.1) (2025-12-26)
+
+
+### Features
+
+* **api:** country ([172a2e8](https://github.com/gabrielysantos-gbmtech/poc-release/commit/172a2e81610f33f8d47b65deaa0a34415307e04e))
+
 # [0.4.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.3.0...v0.4.0) (2025-12-26)
 
 
