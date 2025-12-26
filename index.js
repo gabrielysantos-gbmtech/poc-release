@@ -15,6 +15,10 @@ app.get('/api/status', (req, res) => {
   res.status(200).json({ status: "Running", service: 'Single File API' });
 });
 
+app.get('/api/enterprise', (req, res) => {
+  res.status(200).json({ response: "GBM by NSTECH" });
+});
+
 // Define a POST route (example of handling input)
 app.post('/api/data', (req, res) => {
   const receivedData = req.body;

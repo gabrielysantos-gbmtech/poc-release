@@ -30,7 +30,16 @@
   "release": {
     "branches": [
       "main",
-      "develop"
+      "develop",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      "homolog",
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
