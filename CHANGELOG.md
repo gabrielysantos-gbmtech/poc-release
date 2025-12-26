@@ -1,3 +1,10 @@
+# [0.3.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.2.0...v0.3.0) (2025-12-26)
+
+
+### Features
+
+* enterprise route as beta ([d2f024c](https://github.com/gabrielysantos-gbmtech/poc-release/commit/d2f024c5ae73e7abc46225cbd764e049f7d6b3b9))
+
 # [0.2.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.1.0...v0.2.0) (2025-12-26)
 
 
