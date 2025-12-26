@@ -1,3 +1,10 @@
+# [0.4.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.3.0...v0.4.0) (2025-12-26)
+
+
+### Features
+
+* **api:** team route ([994426e](https://github.com/gabrielysantos-gbmtech/poc-release/commit/994426e534066c10719199532cf12fa22ed9cd23))
+
 # [0.3.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.2.0...v0.3.0) (2025-12-26)
 
 
