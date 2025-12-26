@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v1.0.0...v1.1.0) (2025-12-26)
+
+
+### Features
+
+* **api:** post data route ([e79e4aa](https://github.com/gabrielysantos-gbmtech/poc-release/commit/e79e4aa700310bfe0cb06b4bb55d1c07670a055f))
+
+
+### Performance Improvements
+
+* **api:** express routes ([12cb308](https://github.com/gabrielysantos-gbmtech/poc-release/commit/12cb3085395b19337e1a55f0bde0b52f52616481))
+
 # 1.0.0 (2025-12-26)
 
 
