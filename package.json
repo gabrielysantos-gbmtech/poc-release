@@ -32,12 +32,12 @@
       "main",
       "develop",
       {
-        "name": "beta",
+        "name": "develop",
         "prerelease": true
       },
       "homolog",
       {
-        "name": "alpha",
+        "name": "homolog",
         "prerelease": true
       }
     ],
