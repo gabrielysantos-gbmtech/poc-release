@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v1.1.0...v1.2.0) (2025-12-26)
+
+
+### Features
+
+* **api:** get author ([6c56b4a](https://github.com/gabrielysantos-gbmtech/poc-release/commit/6c56b4a4da3e40e30371c7a98610003a33ee39e2))
+
 # [1.1.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v1.0.0...v1.1.0) (2025-12-26)
 
 
