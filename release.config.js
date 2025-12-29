@@ -1,4 +1,4 @@
-const branch = github.github_base_ref
+const branch = "${{ github.github_base_ref }}"
 
 const config = {
   branches: ['master', { name: 'dev', prerelease: true }, { name: 'develop', prerelease: true }],
