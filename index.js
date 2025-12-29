@@ -19,6 +19,10 @@ app.get('/api/enterprise', (req, res) => {
   res.status(200).json({ response: "GBM by NSTECH" });
 });
 
+app.get('/api/user', (req, res) => {
+  res.status(200).json({ response: "Gabriely" });
+});
+
 // app.get('/api/team', (req, res) => {
 //   res.status(200).json({ response: "DevOps 😎" });
 // });
