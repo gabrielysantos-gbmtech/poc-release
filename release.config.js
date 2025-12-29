@@ -2,7 +2,7 @@ const branch = "${{ github.github_base_ref }}"
 
 const config = {
   branches: [
-    'main', 
+    'production', 
     { name: 'dev', prerelease: true }, 
     { name: 'develop', prerelease: true }, 
     { name: 'homolog', prerelease: true }
