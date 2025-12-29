@@ -23,9 +23,9 @@ app.get('/api/user', (req, res) => {
   res.status(200).json({ response: "Gabriely" });
 });
 
-// app.get('/api/team', (req, res) => {
-//   res.status(200).json({ response: "DevOps 😎" });
-// });
+app.get('/api/team', (req, res) => {
+  res.status(200).json({ response: "DevOps 😎" });
+});
 
 app.get('/api/country', (req, res) => {
   res.status(200).json({ response: "Brasil ✅" });
