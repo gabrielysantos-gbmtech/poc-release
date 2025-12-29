@@ -1,4 +1,4 @@
-const branch = "$GITHUB_REF_NAME"
+const branch = "production"
 
 const config = {
   branches: [
