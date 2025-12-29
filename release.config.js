@@ -4,7 +4,7 @@ const config = {
   branches: [
     'main', 
     { name: 'dev', prerelease: true }, 
-    { name: 'develop', channel: "beta", prerelease: true }, 
+    { name: 'develop', prerelease: true }, 
     { name: 'homolog', prerelease: true }
   ],
   "plugins": [
