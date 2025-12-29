@@ -1,3 +1,10 @@
+# [0.5.0-develop.2](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.5.0-develop.1...v0.5.0-develop.2) (2025-12-29)
+
+
+### Bug Fixes
+
+* **api:** repsonse pattern ([fdf6254](https://github.com/gabrielysantos-gbmtech/poc-release/commit/fdf62540db61cb82c0c191ba8dab666734ae39f3))
+
 # [0.5.0-develop.1](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.4.0...v0.5.0-develop.1) (2025-12-26)
 
 
