@@ -1,4 +1,4 @@
-name: develop-versioning
+name: versioning
 
 on:
   push:
