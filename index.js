@@ -19,9 +19,9 @@ app.get('/api/enterprise', (req, res) => {
   res.status(200).json({ response: "GBM by NSTECH" });
 });
 
-app.get('/api/team', (req, res) => {
-  res.status(200).json({ response: "DevOps 😎" });
-});
+// app.get('/api/team', (req, res) => {
+//   res.status(200).json({ response: "DevOps 😎" });
+// });
 
 app.get('/api/country', (req, res) => {
   res.status(200).json({ response: "Brasil ✅" });
