@@ -36,6 +36,6 @@ jobs:
 
       - name: Build deploy version
         run: |
-          DEPLOY_VERSION="${{ steps.version.outputs.next }}-develop.${GITHUB_RUN_NUMBER}"
+          DEPLOY_VERSION="${{ github.GITHUB_BASE_REF_}}-${{ steps.version.outputs.next }}.${GITHUB_RUN_NUMBER}"
           echo "DEPLOY_VERSION=$DEPLOY_VERSION" >> $GITHUB_ENV
           echo "Deploy version: $DEPLOY_VERSION"
