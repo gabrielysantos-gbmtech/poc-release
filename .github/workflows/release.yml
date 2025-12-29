@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main 
-      - develop
 
 jobs:
   release:
@@ -16,6 +15,8 @@ jobs:
       # Step 1: Checkout the repository code
       - name: Checkout Repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       # Step 2: Set up Node.js
       - name: Set up Node.js
