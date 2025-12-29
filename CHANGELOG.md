@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.5.0...v0.5.1) (2025-12-29)
+
+
+### Bug Fixes
+
+* merge conflit ([5d90935](https://github.com/gabrielysantos-gbmtech/poc-release/commit/5d9093577d8e8f9947cb5c7534c80437b71c66eb))
+
 # [0.5.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.4.0...v0.5.0) (2025-12-26)
 
 
