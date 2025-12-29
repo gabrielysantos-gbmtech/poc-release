@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - develop
+      - homolog
 
 jobs:
   version:
