@@ -7,12 +7,12 @@ app.use(express.json());
 
 // Define a GET route
 app.get('/api/greeting', (req, res) => {
-  res.status(200).json({ message: 'Hello, World!' });
+  res.status(200).json({ response: 'Hello, World!' });
 });
 
 // Define a GET route
 app.get('/api/status', (req, res) => {
-  res.status(200).json({ status: "Running", service: 'Single File API' });
+  res.status(200).json({ status: "Running", response: 'Single File API' });
 });
 
 app.get('/api/enterprise', (req, res) => {
@@ -31,7 +31,7 @@ app.get('/api/country', (req, res) => {
 app.post('/api/data', (req, res) => {
   const receivedData = req.body;
   console.log('Received data:', receivedData);
-  res.status(201).json({ message: 'Data received successfully', data: receivedData });
+  res.status(201).json({ response: 'Data received successfully', data: receivedData });
 });
 
 // Start the server
