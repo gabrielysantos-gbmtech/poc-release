@@ -22,7 +22,6 @@ router.get('/user', simpleResponse({ response: 'Gabriely' }));
 router.get('/team', simpleResponse({ response: 'DevOps' }));
 router.get('/country', simpleResponse({ response: 'Brasil' }));
 
-// Rota POST
 router.post('/data', (req, res) => {
   res.status(201).json({
     response: 'Data received successfully',
@@ -30,10 +29,8 @@ router.post('/data', (req, res) => {
   });
 });
 
-// Mount das rotas
 app.use('/api', router);
 
-// Start do servidor
 app.listen(port, () => {
   console.log(`API server listening at http://localhost:${port}`);
 });
