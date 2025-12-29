@@ -1,7 +1,11 @@
 const branch = "${{ github.github_base_ref }}"
 
 const config = {
-  branches: ['master', { name: 'dev', prerelease: true }, { name: 'develop', prerelease: true }],
+  branches: [
+    'main', 
+    { name: 'dev', prerelease: true }, 
+    { name: 'develop', prerelease: true }
+  ],
   "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
