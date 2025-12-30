@@ -1,3 +1,24 @@
+# [0.11.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.10.1...v0.11.0) (2025-12-30)
+
+
+### Bug Fixes
+
+* **teste:** remove 01 ([e3614b2](https://github.com/gabrielysantos-gbmtech/poc-release/commit/e3614b2f15d68c640915d63cbd34a05a1e89fbe3))
+* **teste:** remove 01 again ([2265d35](https://github.com/gabrielysantos-gbmtech/poc-release/commit/2265d35265f935263fd4f4c7d88adefde9935957))
+* **teste:** remove 02 ([9e19058](https://github.com/gabrielysantos-gbmtech/poc-release/commit/9e19058b246461599a4426275c409f824b9fe2a6))
+* **teste:** remove 02 again ([5e89a70](https://github.com/gabrielysantos-gbmtech/poc-release/commit/5e89a7032bb96cc5b2b321f932547e24c408eae7))
+* **teste:** remove 03 ([1fe4bf9](https://github.com/gabrielysantos-gbmtech/poc-release/commit/1fe4bf919e6a7ba98c2195f3933ab020f8f5f9f0))
+
+
+### Features
+
+* **teste:** add 01 ([6e7c1e8](https://github.com/gabrielysantos-gbmtech/poc-release/commit/6e7c1e8b26f721dcb2a0d8669fd028af593c5fc4))
+* **teste:** add 02 ([d4184db](https://github.com/gabrielysantos-gbmtech/poc-release/commit/d4184db5782e2e255cece8a1512c5f5d19c197d9))
+* **teste:** add 03 ([c6be738](https://github.com/gabrielysantos-gbmtech/poc-release/commit/c6be73893542c0616fcc1b182fb234ec21555584))
+* **teste:** remove 01 again ([7046d16](https://github.com/gabrielysantos-gbmtech/poc-release/commit/7046d1634b301e101500055786c10791a5171826))
+* **teste:** remove 02 again ([7c79170](https://github.com/gabrielysantos-gbmtech/poc-release/commit/7c7917010a51033f9fc01c18851d972722af94b7))
+* **teste:** remove 03 again ([637c96d](https://github.com/gabrielysantos-gbmtech/poc-release/commit/637c96dc480f57576eb2bb98c5585b9598dfa26f))
+
 ## [0.10.1](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.10.0...v0.10.1) (2025-12-30)
 
 
