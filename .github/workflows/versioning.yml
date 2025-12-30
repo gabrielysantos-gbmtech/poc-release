@@ -48,6 +48,7 @@ jobs:
             echo "$GITHUB_SHA"
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
             echo "aqui okay"
             git tag "$DEPLOY_VERSION" "$GITHUB_SHA"
             echo "aqui okay"
