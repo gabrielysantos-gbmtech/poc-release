@@ -18,8 +18,8 @@ router.get('/version', simpleResponse({ response: 'Backend v1.0.0' }));
 router.get('/status', simpleResponse({ status: 'Running', response: 'Single File API' }));
 router.get('/welcome', simpleResponse({ response: 'Welcome to the API' }));
 router.get('/enterprise', simpleResponse({ response: 'GBM by NSTECH' }));
-// router.get('/user', simpleResponse({ response: 'Gabriely' }));
-// router.get('/country', simpleResponse({ response: 'Brasil' }));
+router.get('/user', simpleResponse({ response: 'Gabriely' }));
+router.get('/country', simpleResponse({ response: 'Brasil' }));
 
 router.post('/data', (req, res) => {
   res.status(201).json({
