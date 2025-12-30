@@ -43,9 +43,13 @@ jobs:
         run: |     
           echo "$(pwd)"
           DEPLOY_VERSION="v${{ steps.version.outputs.next }}-$GITHUB_REF_NAME"
+          echo "$(pwd)"
           HAS_HASH=$(git rev-parse -q --verify "$DEPLOY_VERSION")
+          echo "$(pwd)"
+          COMMIT_SHA=$(git rev-parse HEAD)
           echo "$DEPLOY_VERSION"
           echo "$HAS_HASH"
+          echo "$(pwd)"
           if [[ -z "$HAS_HASH" ]]; then
             echo "$GITHUB_SHA"
             git -v
