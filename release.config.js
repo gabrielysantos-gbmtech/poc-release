@@ -1,4 +1,4 @@
-const branch = "${{ github.github_base_ref }}"
+const branch = process.env.RELEASE_BRANCH;
 
 const config = {
   branches: [

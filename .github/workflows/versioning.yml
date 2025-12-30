@@ -13,6 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set branch name
+        run: |
+          echo "RELEASE_BRANCH=${GITHUB_REF_NAME}" >> $GITHUB_ENV
+          
       - uses: actions/checkout@v4
 
       - name: Setup Node
