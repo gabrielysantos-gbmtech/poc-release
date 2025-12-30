@@ -1,10 +1,10 @@
-const branch = "${{ github.github_base_ref }}"
+const branch = process.env.RELEASE_BRANCH;
 
 const config = {
   branches: [
     'main', 
     { name: 'dev', prerelease: true }, 
-    { name: 'develop', prerelease: true }, 
+    { name: 'develop', channel: 'develop', prerelease: true }, 
     { name: 'homolog', prerelease: true }
   ],
   "plugins": [

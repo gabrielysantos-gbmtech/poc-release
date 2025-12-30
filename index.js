@@ -1,44 +1,35 @@
 const express = require('express');
+
 const app = express();
+const router = express.Router();
 const port = 3000;
 
-// Middleware to parse JSON bodies (necessary for POST/PUT requests)
+// Middleware
 app.use(express.json());
 
-// Define a GET route
-app.get('/api/greeting', (req, res) => {
-  res.status(200).json({ response: 'Hello, World!' });
+// Helper para respostas simples
+const simpleResponse = (payload) => (req, res) =>
+  res.status(200).json(payload);
+
+// Rotas GET
+router.get('/greeting', simpleResponse({ response: 'Hello, World!' }));
+router.get('/health', simpleResponse({ response: 'Service is healthy' }));
+router.get('/version', simpleResponse({ response: 'Backend v1.0.0' }));
+router.get('/status', simpleResponse({ status: 'Running', response: 'Single File API' }));
+router.get('/welcome', simpleResponse({ response: 'Welcome to the API' }));
+router.get('/enterprise', simpleResponse({ response: 'GBM by NSTECH' }));
+router.get('/user', simpleResponse({ response: 'Gabriely' }));
+router.get('/country', simpleResponse({ response: 'Brasil' }));
+
+router.post('/data', (req, res) => {
+  res.status(201).json({
+    response: 'Data received successfully',
+    data: req.body,
+  });
 });
 
-// Define a GET route
-app.get('/api/status', (req, res) => {
-  res.status(200).json({ status: "Running", response: 'Single File API' });
-});
+app.use('/api', router);
 
-app.get('/api/enterprise', (req, res) => {
-  res.status(200).json({ response: "GBM by NSTECH" });
-});
-
-app.get('/api/user', (req, res) => {
-  res.status(200).json({ response: "Gabriely" });
-});
-
-// app.get('/api/team', (req, res) => {
-//   res.status(200).json({ response: "DevOps 😎" });
-// });
-
-app.get('/api/country', (req, res) => {
-  res.status(200).json({ response: "Brasil ✅" });
-});
-
-// Define a POST route (example of handling input)
-app.post('/api/data', (req, res) => {
-  const receivedData = req.body;
-  console.log('Received data:', receivedData);
-  res.status(201).json({ response: 'Data received successfully', data: receivedData });
-});
-
-// Start the server
 app.listen(port, () => {
   console.log(`API server listening at http://localhost:${port}`);
 });
