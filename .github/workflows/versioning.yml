@@ -52,9 +52,3 @@ jobs:
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # - name: Build deploy version
-      #   run: |
-      #     DEPLOY_VERSION="${{ steps.version.outputs.next }}-$GITHUB_REF_NAME.${GITHUB_RUN_NUMBER}"
-      #     echo "DEPLOY_VERSION=$DEPLOY_VERSION" >> $GITHUB_ENV
-      #     echo "Deploy version: $DEPLOY_VERSION"
