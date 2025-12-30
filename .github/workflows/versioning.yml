@@ -44,11 +44,13 @@ jobs:
           echo "$(pwd)"
           DEPLOY_VERSION="v${{ steps.version.outputs.next }}-$GITHUB_REF_NAME"
           HAS_HASH=$(git rev-parse -q --verify "$DEPLOY_VERSION")
-          if [ -n "$HAS_HASH" ]; then
-            echo "Tag $DEPLOY_VERSION exists locally."
-          else
+          echo "$DEPLOY_VERSION"
+          echo "$HAS_HASH"
+          if [[ -z "$HAS_HASH" ]]; then
             echo "$GITHUB_SHA"
             git -v
+          else
+            echo "Tag $DEPLOY_VERSION exists locally."
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
