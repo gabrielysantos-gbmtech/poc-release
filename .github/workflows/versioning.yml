@@ -40,7 +40,7 @@ jobs:
           OUTPUT=$(npx semantic-release --dry-run)
           
           # Extrai a versão do log (procura por "The next release version is X.Y.Z")
-          NEXT_VERSION=$(echo "$OUTPUT" | grep "The next release version is" | sed -E 's/.* ([[:digit:].]+)$/\1/')
+          NEXT_VERSION=$(echo "$OUTPUT" | grep -oP 'next release version is \K[0-9]+\.[0-9]+\.[0-9]+[^\s]+')
           
           if [ -z "$NEXT_VERSION" ]; then
             echo "Nenhuma mudança semântica detectada. Pulando tag."
