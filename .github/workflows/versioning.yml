@@ -40,7 +40,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Create Tag
         run: |
-          DEPLOY_VERSION="v${{ steps.version.outputs.next }}-$GITHUB_REF_NAME"
+          DEPLOY_VERSION="v${{ steps.version.outputs.next }}"
           sudo chmod 666 /dev/null
           if [ -z $(git rev-parse -q --verify "$DEPLOY_VERSION") > /dev/null 2>&1 ]; then
             git config --local user.email "action@github.com"
