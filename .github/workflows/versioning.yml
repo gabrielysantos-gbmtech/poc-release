@@ -43,19 +43,10 @@ jobs:
           DEPLOY_VERSION="v${{ steps.version.outputs.next }}-$GITHUB_REF_NAME"
           HAS_HASH=$(git rev-parse -q --verify "$DEPLOY_VERSION")
           if [ -n "$HAS_HASH" ]; then
-              echo "Tag $DEPLOY_VERSION exists locally."
+            echo "Tag $DEPLOY_VERSION exists locally."
           else
             echo "$GITHUB_SHA"
             git -v
-            git config --list
-            # git config --local user.email "action@github.com"
-            # git config --local user.name "GitHub Action"
-            # git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
-            # echo "aqui okay"
-            # git tag "$DEPLOY_VERSION" "$GITHUB_SHA"
-            # echo "aqui okay"
-            # git push origin "$DEPLOY_VERSION"
-            # echo "aqui okay"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
