@@ -1,4 +1,4 @@
-const branch = "production"
+const branch = process.env.RELEASE_BRANCH;
 
 const config = {
   branches: [
