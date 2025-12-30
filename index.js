@@ -12,7 +12,7 @@ const simpleResponse = (payload) => (req, res) =>
   res.status(200).json(payload);
 
 // Rotas GET
-router.get('/greeting', simpleResponse({ response: 'Hello, World!' }));
+// router.get('/greeting', simpleResponse({ response: 'Hello, World!' }));
 router.get('/health', simpleResponse({ response: 'Service is healthy' }));
 router.get('/version', simpleResponse({ response: 'Backend v1.0.0' }));
 router.get('/status', simpleResponse({ status: 'Running', response: 'Single File API' }));
