@@ -45,10 +45,14 @@ jobs:
           if [ -n "$HAS_HASH" ]; then
               echo "Tag $DEPLOY_VERSION exists locally."
           else
+            echo "$GITHUB_SHA"
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
+            echo "aqui okay"
             git tag "$DEPLOY_VERSION" "$GITHUB_SHA"
+            echo "aqui okay"
             git push origin "$DEPLOY_VERSION"
+            echo "aqui okay"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
