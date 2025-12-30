@@ -48,6 +48,8 @@ jobs:
             git tag "$DEPLOY_VERSION" "$GITHUB_SHA"
             git push origin "$DEPLOY_VERSION"
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # - name: Build deploy version
       #   run: |
