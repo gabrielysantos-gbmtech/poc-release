@@ -2,7 +2,7 @@ const branch = process.env.RELEASE_BRANCH;
 
 const config = {
   branches: [
-    'main', 
+    'production', 
     { name: 'dev', prerelease: true }, 
     { name: 'develop', channel: 'develop', prerelease: true }, 
     { name: 'homolog', prerelease: true }
