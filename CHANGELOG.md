@@ -1,18 +1,20 @@
-# [0.3.0-homolog.1](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.2.0...v0.3.0-homolog.1) (2025-12-30)
+# [0.10.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.9.0...v0.10.0) (2025-12-30)
 
 
 ### Bug Fixes
 
 * **api:** remove country route ([9a52a32](https://github.com/gabrielysantos-gbmtech/poc-release/commit/9a52a32f41c6128d6b66acd70145091f6a046987))
-* **api:** remove public route with private information ([1cfe0e6](https://github.com/gabrielysantos-gbmtech/poc-release/commit/1cfe0e678126d0e3cd3afc149e2ebed3af36e8e3))
-* **api:** repsonse pattern ([fdf6254](https://github.com/gabrielysantos-gbmtech/poc-release/commit/fdf62540db61cb82c0c191ba8dab666734ae39f3))
-* get branch variable ([65f259b](https://github.com/gabrielysantos-gbmtech/poc-release/commit/65f259bd91c0a3fc0422e7b1bbf01a0ef878fdc2))
-* main branch on release config ([80acf18](https://github.com/gabrielysantos-gbmtech/poc-release/commit/80acf18376cbdf3000a5a12440dc2a4793eb47ad))
-* merge conflit ([5d90935](https://github.com/gabrielysantos-gbmtech/poc-release/commit/5d9093577d8e8f9947cb5c7534c80437b71c66eb))
-* private information on response ([142deba](https://github.com/gabrielysantos-gbmtech/poc-release/commit/142deba2811429254002f9b0a4f0f6b74dec76a1))
 * remove country route ([fb7c091](https://github.com/gabrielysantos-gbmtech/poc-release/commit/fb7c091f0be6f15e12d9862736417061aeab8312))
 * remove country route ([59e0a59](https://github.com/gabrielysantos-gbmtech/poc-release/commit/59e0a597d413e0a01a8047f60804d545c2cc4e55))
-* route team ([9078e23](https://github.com/gabrielysantos-gbmtech/poc-release/commit/9078e2370e0e5e9891ad6e348d427ddea449c734))
+
+
+### Features
+
+* add country route ([bf787a7](https://github.com/gabrielysantos-gbmtech/poc-release/commit/bf787a73c9fd6abc18d4477bd7e64c0aacb9ab9f))
+* **api:** add country information route ([816a33d](https://github.com/gabrielysantos-gbmtech/poc-release/commit/816a33d537412c428d0796f20b9cb81b0b01d474))
+* **api:** country route ([e903b51](https://github.com/gabrielysantos-gbmtech/poc-release/commit/e903b5165ccdec9610e631987084d08b66424db1))
+
+# [0.9.0](https://github.com/gabrielysantos-gbmtech/poc-release/compare/v0.8.1...v0.9.0) (2025-12-29)
 
 
 ### Features
